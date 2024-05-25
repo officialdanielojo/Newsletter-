@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sect-three {
+    width: 100%;
+    padding-top: 100px;
+    display: none;
+    margin-inline: 30px;
+    /* position: absolute; */
+}
+
+.sect-three img {
+    width: 70px;
+}
+
+.sect-three h1 {
+    width: 80%;
+    margin-block: 30px;
+    font-size: 40px;
+    color: #23283f;
+    line-height: 40px;
+}
+
+.sect-three p {
+    width: 80%;
+    line-height: 25px;
+    color: #23283f;
+}
+
+.sect-three p span {
+    font-weight: 700;
+}
+
+.sect-three button {
+    margin-top: 70%;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #232742;
+    text-align: center;
+}
+
+button:hover {
+    background: #ff5474 linear-gradient(#ff5474, #f2613f);
+}
+
+@media screen and (min-width: 827px) {
+    body {
+        background-color: #232742;
+    }
+
+    .sect-three {
+        position: fixed;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 20px;
+        width: 500px;
+    }
+
+    .sect-three p {
+        width: 85%;
+    }
+
+    .sect-three button {
+        margin-top: 10%;
+    }
+}

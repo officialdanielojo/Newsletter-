@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./success.css">
+  <title>Newsletter</title>
+</head>
+
+<body>
+  <main id="main">
+    <!-- upper section -->
+    <section class="sect-one">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ products managers receiving monthly updates on:</p>
+
+      <ul>
+        <img src="./assets/images/icon-list.svg" />
+        <li>Product discovery and building what matters</li>
+      </ul>
+
+      <ul>
+        <img src="./assets/images/icon-list.svg" />
+        <li>Measuring to ensure updates are a success</li>
+      </ul>
+
+      <ul>
+        <img src="./assets/images/icon-list.svg" />
+        <li>And much more!</li>
+      </ul>
+
+      <span>Email address</span>
+
+      <form>
+        <input type="text" placeholder="email@company.com" id="email" />
+      </form>
+
+      <button id="subscribeButton" onclick="mail()">
+        Subscribe to monthly newsletter
+      </button>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://www.facebook.com" target="_blank">Ojo Daniel</a>.
+      </div>
+    </section>
+
+    <!-- lower section -->
+    <section class="sect-two">
+    </section>
+  </main>
+
+  <section class="sect-three">
+    <img src="./assets/images/icon-list.svg" />
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation message has been sent to
+      <span id="sub_email"></span> Please open it and click the button
+      inside to confirm your subscription.
+    </p>
+    <button id="dismiss">Dismiss message</button>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
