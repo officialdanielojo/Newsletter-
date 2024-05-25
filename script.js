@@ -16,28 +16,32 @@ let successMessage = document.querySelector(".sect-three");
 // Get the confirmation message container and the email span
 const emailSpan = document.getElementById("sub_email");
 
+function isValidEmail(email) {
+  // A robust email validation regex
+  const emailRegex =
+    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/;
+  return emailRegex.test(email);
+}
+
 function mail() {
   // Retrieve the value entered by the user
   const userEmail = emailInput.value;
 
-  // Update the email span content
-  emailSpan.textContent = userEmail;
-
-  if (userEmail === "") {
-    alert("input correct email");
+  if (isValidEmail(userEmail)) {
+    // Update the email span content
+    emailSpan.textContent = userEmail;
+    // Display the success page
+    successMessage.style.display = "block";
+    // Un-display the main page
+    mainPage.style.display = "none";
+  } else {
+    // Display an error message
+    alert("Please enter a valid email address.");
   }
-
-  console.log(userEmail);
 }
 
 // Add an event listener to the button
-subscribeButton.addEventListener("click", function () {
-  // Display the success page
-  successMessage.style.display = "block";
-
-  // Un-display the main page
-  mainPage.style.display = "none";
-});
+subscribeButton.addEventListener("click", mail);
 
 // Add event listener to successButton
 dismissButton.addEventListener("click", function () {
