@@ -6,25 +6,25 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-family: sans-serif;
 }
 
 main {
     width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
 }
 
 .sect-one {
-    margin-top: 300px;
-    padding-inline: 10px;
+    padding-inline: 20px;
     background-color: #ffffff;
 }
 
 .sect-one h1 {
     font-size: 40px;
-    padding-block: 40px 20px;
+    padding-block: 30px 20px;
     color: #212337;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .sect-one ul li {
-    padding-left: 20px;
+    padding-left: 10px;
     width: 80%;
     color: #212337;
 }
@@ -85,12 +85,10 @@ button:hover {
 .sect-two {
     width: 100%;
     height: 370px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
     background-image: url(./assets/images/illustration-sign-up-mobile.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .attribution {
@@ -102,15 +100,19 @@ button:hover {
 .attribution a:link {
     color: #0000ff;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
-@media screen and (min-width: 827px) {
+@media screen and (min-width: 700px) {
     body {
         background-color: #36384d;
+        display: flex;
+        justify-content: center;
     }
 
     main {
         display: flex;
+        flex-direction: row;
         padding: 15px;
         background-color: #ffffff;
         border-radius: 20px;
@@ -122,6 +124,7 @@ button:hover {
         width: 50%;
         padding-inline: 10px;
         margin-right: 20px;
+        order: 1;
     }
 
     .sect-one p {
@@ -165,7 +168,7 @@ button:hover {
         width: 50%;
         height: auto;
         margin-left: 20px;
-        position: relative;
+        order: 2;
     }
 
 }

@@ -8,8 +8,7 @@
     width: 100%;
     padding-top: 100px;
     display: none;
-    margin-inline: 30px;
-    /* position: absolute; */
+    padding: 30px;
 }
 
 .sect-three img {
@@ -35,7 +34,7 @@
 }
 
 .sect-three button {
-    margin-top: 70%;
+    margin-top: 60%;
     width: 100%;
     padding: 25px;
     border-radius: 10px;
@@ -52,7 +51,7 @@ button:hover {
     background: #ff5474 linear-gradient(#ff5474, #f2613f);
 }
 
-@media screen and (min-width: 827px) {
+@media screen and (min-width: 700px) {
     body {
         background-color: #232742;
     }
@@ -62,11 +61,11 @@ button:hover {
         background-color: #ffffff;
         padding: 40px;
         border-radius: 20px;
-        width: 500px;
+        width: 30rem;
     }
 
     .sect-three p {
-        width: 85%;
+        width: 90%;
     }
 
     .sect-three button {
